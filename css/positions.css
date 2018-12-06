@@ -1,0 +1,131 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #ADD8E6;
+}
+
+
+/* top-level ul list items (li) */
+
+.menubar li {
+    display: inline-block;
+    background: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 1.5px;
+    border-radius: 3px;
+}
+
+
+/* top-level li elements that are also a elements */
+
+.menubar li a {
+    color: Black;
+    text-decoration: none;
+}
+
+
+/* what happens when you hover over a top-level li element */
+
+.menubar li:hover {
+    background: gray;
+}
+
+
+/* default appearance of secondary ul/submenu elements (styled but invisible) */
+
+.menubar li ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    text-align: left;
+}
+
+
+/* appearance of submenu li elements */
+
+.menubar li ul li {
+    background: white;
+    color: black;
+    display: block;
+    /* last two lines fixed dropdown menu from hiding behind text*/
+    position: relative;
+    z-index: 10000;
+}
+
+
+/* appearance of submenu li elements that are also a elements */
+
+.menubar li ul li a {
+    color: black;
+    white-space: nowrap;
+}
+
+
+/* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
+
+.menubar li:hover ul {
+    display: block;
+}
+
+
+/* what happens when you hover over an li item in the submenu */
+
+.menubar li ul li:hover {
+    background: grey;
+}
+
+h1 {
+    color: Gray;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    text-align: center
+}
+
+.address {
+    color: Gray;
+    font-size: 15px;
+}
+
+h4 {
+    color: gray;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+    font-size: 20px
+}
+
+h5 {
+    color: gray;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 6px;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    max-width: 100%;
+    object-fit: scale-down;
+    padding: .5px;
+}
