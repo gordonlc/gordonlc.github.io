@@ -82,3 +82,62 @@ body {
 a:hover {
     color: blue;
 }
+h1 {
+    color: Gray;
+    font-size: 55px;
+    text-align: center;
+}
+
+h2 {
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+}
+
+p2 {
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
+h3 {
+    color: white;
+    font-size: 15px;
+    text-align: center
+}
+
+.address {
+    color: Gray;
+    font-size: 15px;
+}
+
+h4 {
+    color: gray;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+    font-size: 20px
+}
+
+h5 {
+    color: gray;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
