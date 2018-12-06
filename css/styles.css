@@ -115,3 +115,8 @@ h5 {
     color: gray;
     font-size: 30px;
 }
+/* mouse over link */
+
+a:hover {
+    color: blue;
+}
