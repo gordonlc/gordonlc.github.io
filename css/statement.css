@@ -77,3 +77,8 @@ body {
 .menubar li ul li:hover {
     background: grey;
 }
+/* mouse over link */
+
+a:hover {
+    color: blue;
+}
