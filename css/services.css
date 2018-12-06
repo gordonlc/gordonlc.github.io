@@ -200,3 +200,8 @@ img {
     object-fit: scale-down;
     padding: .5px;
 }
+/* mouse over link */
+
+a:hover {
+    color: blue;
+}
