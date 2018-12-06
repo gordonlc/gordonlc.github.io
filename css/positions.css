@@ -119,6 +119,11 @@ h5 {
     margin-bottom: 6px;
     text-decoration: underline;
 }
+p2 {
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
 
 img {
     display: block;
