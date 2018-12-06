@@ -198,3 +198,8 @@ thing {
     background: blue;
     text-align: center;
 }
+/* mouse over link */
+
+a:hover {
+    color: blue;
+}
