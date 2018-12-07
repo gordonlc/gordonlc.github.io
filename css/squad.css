@@ -1,205 +1,220 @@
 body {
-    font-family: Arial;
-    text-align: center;
-    background-color: #9dd1e1;
+  font-family: Arial;
+  text-align: center;
+  background-color: #9dd1e1;
 }
-
 
 /* top-level ul list items (li) */
 
 .menubar li {
-    display: inline-block;
-    background: white;
-    padding: 15px 20px;
-    cursor: pointer;
-    position: relative;
-    margin: 1.5px;
-    border-radius: 3px;
+  display: inline-block;
+  background: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  margin: 1.5px;
+  border-radius: 3px;
 }
-
 
 /* top-level li elements that are also a elements */
 
 .menubar li a {
-    color: Black;
-    text-decoration: none;
+  color: Black;
+  text-decoration: none;
 }
-
 
 /* what happens when you hover over a top-level li element */
 
 .menubar li:hover {
-    background: gray;
+  background: gray;
 }
-
 
 /* default appearance of secondary ul/submenu elements (styled but invisible) */
 
 .menubar li ul {
-    display: none;
-    padding: 0;
-    position: absolute;
-    top: 39px;
-    left: 0;
-    text-align: left;
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  text-align: left;
 }
-
 
 /* appearance of submenu li elements */
 
 .menubar li ul li {
-    background: white;
-    color: black;
-    display: block;
-    /* last two lines fixed dropdown menu from hiding behind text*/
-    position: relative;
-    z-index: 10000;
+  background: white;
+  color: black;
+  display: block;
+  /* last two lines fixed dropdown menu from hiding behind text*/
+  position: relative;
+  z-index: 10000;
 }
-
 
 /* appearance of submenu li elements that are also a elements */
 
 .menubar li ul li a {
-    color: black;
-    white-space: nowrap;
+  color: black;
+  white-space: nowrap;
 }
-
 
 /* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
 
 .menubar li:hover ul {
-    display: block;
+  display: block;
 }
-
 
 /* what happens when you hover over an li item in the submenu */
 
 .menubar li ul li:hover {
-    background: grey;
+  background: grey;
 }
 
 h1 {
-    color: Gray;
-    font-size: 60px;
-    text-align: center;
+  color: Gray;
+  font-size: 60px;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 h4 {
-    text-align: center;
+  text-align: center;
 }
 
 h5 {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    float: none;
-    width: 170px;
-    height: 170px;
-    margin-left: 15px;
+  float: none;
+  width: 170px;
+  height: 170px;
+  margin-left: 15px;
 }
 
 p1 {
-    float: left;
+  float: left;
 }
 
 p2 {
-    float: right;
+  float: right;
 }
 
 p3 {
-    text-align: center;
+  text-align: center;
 }
 
 p4 {
-    text-align: center;
-    font-size: 25px;
-    width: 80%;
-    text-align: center;
+  text-align: center;
+  font-size: 25px;
+  width: 80%;
+  text-align: center;
 }
 
 p5 {
-    float: right;
-    width: 180px;
-    height: 500px;
+  float: right;
+  width: 180px;
+  height: 500px;
 }
 
 p6 {
-    float: left;
-    width: 170px;
-    height: 500px;
+  float: left;
+  width: 170px;
+  height: 500px;
 }
-
 .center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #fff;
-    padding: 10px;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #fff;
+  padding: 10px;
 }
 
 .container {
-    table-layout: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*table-layout: fixed;
     border-radius: 25px;
     display: inline-flex;
     width: 100%;
     margin: 10px;
-    align-content: center;
+    align-content: center;*/
 }
 
 .item {
-    background-color: white;
-    height: 438px;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-right: 7px;
-    padding-left: 7px;
-    box-sizing: border-box;
-    margin: 1%;
-    font-size: 15px;
+  background-color: white;
+  width: 600px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  padding-left: 7px;
+  box-sizing: border-box;
+  margin: 1%;
+  font-size: 15px;
 }
 
 main,
 aside,
 header,
 thing {
-    margin: 0;
-    padding: 0px 20px;
-    font-size: 1.3em;
+  margin: 0;
+  padding: 0px 20px;
+  font-size: 1.3em;
 }
 
 aside {
-    margin: 0 20px 10px;
-    width: 150px;
-    float: right;
-    border: none;
+  margin: 0 20px 10px;
+  width: 150px;
+  float: right;
+  border: none;
 }
 
 header {
-    clear: both;
-    background: red;
-    text-align: center;
-    width: 100%;
+  clear: both;
+  background: red;
+  text-align: center;
+  width: 100%;
 }
 
 thing {
-    width: 125%;
-    display: flex;
-    align-content: center;
-    clear: both;
-    background: blue;
+  width: 125%;
+  display: flex;
+  align-content: center;
+  clear: both;
+  background: blue;
+  text-align: center;
+}
+.address{
+    color: Gray;
+    font-size: 15px;
+  padding-top: 20px; 
+}
+h6 {
+    color: white;
+    font-size: 15px;
     text-align: center;
+    margin-top: 20px;
+  margin-bottom: 20px;
+}
+h7{
+    color: gray;
+    font-size: 15px;
+  text-align: center;
+}
+a {
+  color: white;
+  font-size: 20px;
 }
 /* mouse over link */
 
 a:hover {
-    color: blue;
+  color: blue;
 }
