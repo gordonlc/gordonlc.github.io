@@ -1,83 +1,100 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  background-color: #9dd1e1;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #ADD8E6;
+}
+
 
 /* top-level ul list items (li) */
 
 .menubar li {
-  display: inline-block;
-  background: white;
-  padding: 15px 20px;
-  cursor: pointer;
-  position: relative;
-  margin: 1.5px;
-  border-radius: 3px;
+    display: inline-block;
+    background: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 1.5px;
+    border-radius: 3px;
 }
+
 
 /* top-level li elements that are also a elements */
 
 .menubar li a {
-  color: Black;
-  text-decoration: none;
+    color: Black;
+    text-decoration: none;
 }
+
 
 /* what happens when you hover over a top-level li element */
 
 .menubar li:hover {
-  background: gray;
+    background: gray;
 }
+
 
 /* default appearance of secondary ul/submenu elements (styled but invisible) */
 
 .menubar li ul {
-  display: none;
-  padding: 0;
-  position: absolute;
-  top: 39px;
-  left: 0;
-  text-align: left;
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    text-align: left;
 }
+
 
 /* appearance of submenu li elements */
 
 .menubar li ul li {
-  background: white;
-  color: black;
-  display: block;
-  /* last two lines fixed dropdown menu from hiding behind text*/
-  position: relative;
-  z-index: 10000;
+    background: white;
+    color: black;
+    display: block;
+    /* last two lines fixed dropdown menu from hiding behind text*/
+    position: relative;
+    z-index: 10000;
 }
+
 
 /* appearance of submenu li elements that are also a elements */
 
 .menubar li ul li a {
-  color: black;
-  white-space: nowrap;
+    color: black;
+    white-space: nowrap;
 }
+
 
 /* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
 
 .menubar li:hover ul {
-  display: block;
+    display: block;
 }
+
 
 /* what happens when you hover over an li item in the submenu */
 
 .menubar li ul li:hover {
-  background: grey;
+    background: grey;
 }
 
 h1 {
-  color: Gray;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    color: Gray;
+    font-size: 60px;
+    text-align: center;
 }
+
+
+/*.history {
+                                                        color: #000000;
+                                                        font-family: 'Droid Serif', sans-serif;
+                                                        font-size: 35px;
+                                                        text-align: left;
+                                                    } */
 
 .row {
     position: relative;
@@ -85,11 +102,8 @@ h1 {
 
 h2 {
     color: gray;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 20px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
 }
 
 h3 {
@@ -120,25 +134,115 @@ a:hover {
     color: hotpink;
 }
 
-#table {
+video {
+    width: 50%;
+    float: left;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+* Create two equal columns that floats next to each other */ .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
     display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/*
+.grid {
+    display: grid;
+    grid-template-areas: myArea myArea myArea myArea;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+*/
+
+
+/*.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: two;
+}
+
+.four {
+    grid-area: two;
+}
+
+.five {
+    grid-area: two;
+}
+
+.six {
+    grid-area: two;
+}
+
+.grid>div {
+    border: 1px solid rgba(100, 100, 100, 0.6);
+    background-color: rgba(100, 100, 100, 0.3);
     position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
 }
 
-.row {
-    display: table-row;
-}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
 
-.cell {
-    display: table-cell;
-    padding: 0 60px;
-}
 
-* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {
-    ...
-}
-/* mouse over link */
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 
-a:hover {
-    color: blue;
+@supports (display: grid) {
+    .wrapper>* {
+        margin: 0;
+    }
 }
