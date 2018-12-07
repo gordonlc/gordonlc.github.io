@@ -83,13 +83,10 @@ body {
 }
 
 h1 {
-    color: Gray !important;
-    font-size: 60px !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-    text-align: center!important;
-	margin-bottom: inherit !important;
-	margin-top: inherit !important;
+    color: Gray;
+    font-size: 60px;
+    text-align: center;
+	
 }
 
 
