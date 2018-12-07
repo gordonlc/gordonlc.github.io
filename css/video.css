@@ -75,6 +75,8 @@ h1 {
   font-size: 60px;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .row {
