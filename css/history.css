@@ -80,8 +80,9 @@ body {
 
 h1 {
     color: Gray;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 
