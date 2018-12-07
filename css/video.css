@@ -1,11 +1,7 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial;
     text-align: center;
-    background-color: #ADD8E6;
+    background-color: #9dd1e1;
 }
 
 
@@ -86,7 +82,6 @@ h1 {
     color: Gray;
     font-size: 60px;
     text-align: center;
-	
 }
 
 
@@ -135,115 +130,25 @@ a:hover {
     color: hotpink;
 }
 
-video {
-    width: 50%;
-    float: left;
-}
-
-.portfolio-item {
-    margin-bottom: 25px;
-}
-
-* Create two equal columns that floats next to each other */ .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
+#table {
     display: table;
-    clear: both;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
-}
-
-
-/*
-.grid {
-    display: grid;
-    grid-template-areas: myArea myArea myArea myArea;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 0px;
-}
-
-.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-*/
-
-
-/*.one {
-    grid-area: one;
-}
-
-.two {
-    grid-area: two;
-}
-
-.three {
-    grid-area: two;
-}
-
-.four {
-    grid-area: two;
-}
-
-.five {
-    grid-area: two;
-}
-
-.six {
-    grid-area: two;
-}
-
-.grid>div {
-    border: 1px solid rgba(100, 100, 100, 0.6);
-    background-color: rgba(100, 100, 100, 0.3);
     position: relative;
-    height: 0;
-    padding-top: 56.25%;
-    overflow: hidden;
 }
 
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/
+.row {
+    display: table-row;
+}
 
+.cell {
+    display: table-cell;
+    padding: 0 60px;
+}
 
-/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {
+    ...
+}
+/* mouse over link */
 
-@supports (display: grid) {
-    .wrapper>* {
-        margin: 0;
-    }
+a:hover {
+    color: blue;
 }
