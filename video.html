@@ -1,128 +1,140 @@
-<!doctype html>
-<html lang=en>
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: #9dd1e1;
+}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Woodleaf Baptist Church Videos</title>
+/* top-level ul list items (li) */
 
-    <!-- Link to Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+.menubar li {
+  display: inline-block;
+  background: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  margin: 1.5px;
+  border-radius: 3px;
+}
 
-    <!-- a Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+/* top-level li elements that are also a elements */
 
-    <!-- FontAwesome for search icon -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+.menubar li a {
+  color: Black;
+  text-decoration: none;
+}
 
-    <!-- Link to your custom stylesheet. Any non-Bootstrap styles you create go in this stylesheet. 
-        You can create new classes and IDs, or add new rules for classes that already exist in Bootstrap. 
-        Any rules you put in your custom stylesheet will override any styling applied to any elements of 
-        the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="css/video.css">
+/* what happens when you hover over a top-level li element */
 
+.menubar li:hover {
+  background: gray;
+}
 
+/* default appearance of secondary ul/submenu elements (styled but invisible) */
 
-</head>
-<h1> Woodleaf Baptist Church</h1>
+.menubar li ul {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  text-align: left;
+}
 
-<body>
-    <!--Navbar-->
-    <ul class="menubar">
-        <li class="active"><a href="index.html">Home</a></li>
+/* appearance of submenu li elements */
 
-        <li><a href="#">About Us</a>
-            <ul class="dropdown_menu">
-                <li><a href="history.html">Our History </a></li>
-                <li><a href="statement.html">Statement of Faith </a></li>
-                <li><a href="positions.html">Our Church Positions</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Worship With Us</a>
-            <ul class="dropdown_menu">
-                <li><a href="services.html">Our Services </a></li>
-                <li><a href="video.html">Watch Online </a></li>
-                <li><a href="squad.html">Jesus Squad</a></li>
-            </ul>
-        </li>
+.menubar li ul li {
+  background: white;
+  color: black;
+  display: block;
+  /* last two lines fixed dropdown menu from hiding behind text*/
+  position: relative;
+  z-index: 10000;
+}
 
-        <li><a href="min.html">Ministries</a></li>
-    </ul>
+/* appearance of submenu li elements that are also a elements */
 
-    <!--End Navbar-->
-    <h2>Watch Online</h2>
-    <!--Video Grid-->
-    <div id="table">
-        <div class="row">
-            <div class="cell">
-                <h5>Samuel 7:1-13</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/T64HegvZ4Uc" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="cell">
-                <h5>2 Chronicles </h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AfCUhU-En1Q" frameborder="0" align="right" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell">
-                <h5>Ephesians 4:29-32</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lFKCkPi1yrQ" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="cell">
-                <h5>Genesis</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Uue0SyMWPXU" frameborder="0" align="right" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell">
-                <h5>Leviticus 23:33-44</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VqnF6TuMgCY" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="cell">
-                <h5>Matthew 13:1-9</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/weR-5euKpBs" frameborder="0" align="right" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
+.menubar li ul li a {
+  color: black;
+  white-space: nowrap;
+}
 
+/* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
 
+.menubar li:hover ul {
+  display: block;
+}
 
+/* what happens when you hover over an li item in the submenu */
 
+.menubar li ul li:hover {
+  background: grey;
+}
 
+h1 {
+  color: Gray;
+  font-size: 60px;
+  text-align: center;
+}
 
+.row {
+    position: relative;
+}
 
+h2 {
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
 
+h3 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
 
-    <!--Footer-->
-    <div class="address">
-        <p>
-            Woodleaf Baptist Church <br> 7790 Woodleaf Rd <br> Woodleaf, North Carolina 27054</p>
-    </div>
-    <h3> Connect with us on Facebook at
-    </h3>
-    <a href="http://www.facebook.com/WoodleafChurch/?modal=admin_todo_tour">Woodleaf Baptist Church</a>
-    <h4> Contact information for Pastor Chris Williams <br> Phone: 704-278-1336 <br> Email: cjwillxx@yahoo.com
-    </h4>
+.address {
+    color: Gray;
+    font-size: 15px;
+}
 
-    <!-- NECESSARY <script> LINKS. The three <script> links below add jQuery, popper.js, and Bootstrap 4 JavaScript. 
-        These are libraries of scripts that are necessary to make Bootstrap's interactive and animated components work 
-        (e.g., dropdown menus, buttons, alerts, carousels, collapsing navbars and content areas, modals, popups, tooltips, etc). 
-        These three <script> links MUST appear in THIS ORDER; this is because both popper.js and the Bootstrap scripts rely on jQuery to work,
-             so jQuery must load into your page first. We add these links at the bottom of the <body> element instead of in the <head> element so the 
-                 scripts won't be loaded into your site until they're needed, which helps with your site's speed and functionality. -->
+h4 {
+    color: gray;
+    font-size: 15px;
+}
 
-    <!-- jQuery--this must come first! -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <!-- popper.js--a library of drop-down and pop-up JavaScript scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
-    <!-- unique Bootstrap 4 JavaScript scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+a {
+    color: white;
+    font-size: 20px
+}
 
 
-</body>
+/* mouse over link */
 
+a:hover {
+    color: hotpink;
+}
 
-</html>
+#table {
+    display: table;
+    position: relative;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 0 60px;
+}
+
+* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {
+    ...
+}
+/* mouse over link */
+
+a:hover {
+    color: blue;
+}
