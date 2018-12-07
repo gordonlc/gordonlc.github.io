@@ -71,20 +71,26 @@ body {
 }
 
 h1 {
-  color: Gray;
+  color: Grey;
   font-size: 60px;
   text-align: center;
 }
 
 h2 {
+  color: grey;
+  font-size: 50px;
   text-align: center;
 }
 
 h3 {
+  color: grey;
+  font-size: 30px;
   text-align: center;
 }
 
 h4 {
+  color: grey;
+  font-size: 20px;
   text-align: center;
 }
 
