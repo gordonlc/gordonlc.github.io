@@ -112,3 +112,8 @@ a {
 a:hover {
   color: blue;
 }
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
