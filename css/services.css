@@ -1,207 +1,177 @@
 body {
-    font-family: Arial;
-    text-align: center;
     background-color: #9dd1e1;
+}
+body {
+  font-family: Arial;
+  text-align: center;
 }
 
 
 /* top-level ul list items (li) */
-
 .menubar li {
-    display: inline-block;
-    background: white;
-    padding: 15px 20px;
-    cursor: pointer;
-    position: relative;
-    margin: 1.5px;
-    border-radius: 3px;
+  display: inline-block;
+  background: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
 }
-
 
 /* top-level li elements that are also a elements */
-
 .menubar li a {
-    color: Black;
-    text-decoration: none;
+  color: Black; 
+  text-decoration: none;
 }
-
 
 /* what happens when you hover over a top-level li element */
-
 .menubar li:hover {
-    background: gray;
+  background: gray;
 }
-
 
 /* default appearance of secondary ul/submenu elements (styled but invisible) */
-
 .menubar li ul {
-    display: none;
-    padding: 0;
-    position: absolute;
-    top: 39px;
-    left: 0;
-    text-align: left;
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  text-align: left;
 }
-
 
 /* appearance of submenu li elements */
-
 .menubar li ul li {
-    background: white;
-    color: black;
-    display: block;
-    /* last two lines fixed dropdown menu from hiding behind text*/
-    position: relative;
-    z-index: 10000;
+  background: white;
+  color: black;
+  display: block;
 }
-
 
 /* appearance of submenu li elements that are also a elements */
-
-.menubar li ul li a {
-    color: black;
-    white-space: nowrap;
+.menubar li ul li a { 
+color: black;
+  white-space: nowrap;
 }
-
 
 /* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
-
 .menubar li:hover ul {
-    display: block;
+  display: block;
 }
-
 
 /* what happens when you hover over an li item in the submenu */
-
 .menubar li ul li:hover {
-    background: grey;
+  background: grey;
 }
 
+
+
 h1 {
-    color: Gray;
+    color:Gray;
     font-size: 60px;
     text-align: center;
 }
-
 h2 {
-    color: gray;
+    color:gray;
     font-size: 20px;
-    text-align: center;
+    text-align: center;  
 }
-
 p {
     color: black;
     font-size: 16px;
     text-align: left;
 }
-
 p2 {
-    color: black;
+  color: black;
     font-size: 15px;
     text-align: center;
 }
-
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .item {
-    color: black;
-    font-size: 18px;
-    font-weight: normal;
-    width: 230px;
-    border: 3px solid gray;
-    text-align: center;
-    box-sizing: border-box;
-    margin: .5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  width: 230px;
+  border: 3px solid gray;
+  text-align: center;
+  box-sizing: border-box;
+  margin: .5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 .item2 {
-    color: black;
-    font-size: 18px;
-    font-weight: normal;
-    width: 420px;
-    border: 3px solid gray;
-    text-align: center;
-    box-sizing: border-box;
-    margin: .5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  width: 420px;
+  border: 3px solid gray;
+  text-align: center;
+  box-sizing: border-box;
+  margin: .5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 .item3 {
-    color: black;
-    font-size: 18px;
-    font-weight: normal;
-    width: 600px;
-    border: 3px solid gray;
-    text-align: center;
-    box-sizing: border-box;
-    margin: .5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  width: 600px;
+  border: 3px solid gray;
+  text-align: center;
+  box-sizing: border-box;
+  margin: .5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 h3 {
     color: white;
     font-size: 15px;
     text-align: center
 }
-
-.address {
+.address{
     color: Gray;
     font-size: 15px;
+    
 }
-
-h4 {
+h4{
     color: gray;
     font-size: 15px;
 }
-
-a {
+a{
     color: white;
     font-size: 20px
 }
-
-a2 {
-    color: black;
+a2{
+  color: black;
     font-size: 16px;
     text-align: left;
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-h5 {
+h5{
     color: gray;
     font-size: 45px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
 }
-
-h6 {
-    color: gray;
+h6 { 
+  color: gray;
     font-size: 30px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
 }
-
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5%;
-    max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+    max-width:100%;
     object-fit: scale-down;
     padding: .5px;
 }
-/* mouse over link */
-
 a:hover {
     color: blue;
 }
