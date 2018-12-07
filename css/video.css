@@ -82,6 +82,10 @@ h1 {
     color: Gray;
     font-size: 60px;
     text-align: center;
+    margin-bottom: inherit;
+    margin-top: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 
