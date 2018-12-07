@@ -80,10 +80,8 @@ body {
 
 h1 {
     color: Gray;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 15px;
+  font-size: 60px;
+  text-align: center;
 }
 
 
@@ -99,9 +97,11 @@ h1 {
 }
 
 h2 {
-    color: gray;
-    font-size: 20px;
+    color: Gray;
+    font-size: 50px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h3 {
