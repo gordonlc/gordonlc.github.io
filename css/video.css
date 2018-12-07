@@ -101,9 +101,11 @@ h1 {
 }
 
 h2 {
-    color: gray;
-    font-size: 20px;
+     color: gray;
+    font-size: 50px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 h3 {
