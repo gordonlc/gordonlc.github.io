@@ -88,18 +88,6 @@ h1 {
     line-height: inherit;
 }
 
-
-/*.history {
-                                                        color: #000000;
-                                                        font-family: 'Droid Serif', sans-serif;
-                                                        font-size: 35px;
-                                                        text-align: left;
-                                                    } */
-
-.row {
-    position: relative;
-}
-
 h2 {
      color: gray;
     font-size: 50px;
