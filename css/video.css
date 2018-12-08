@@ -89,7 +89,7 @@ h1 {
 }
 
 h2 {
-     color: gray;
+    color: gray;
     font-size: 50px;
     text-align: center;
     margin-top: 0px;
@@ -130,6 +130,8 @@ a:hover {
 a:hover {
     color: blue;
 }
+
+
 /*Photo Grid*/
 
 .row {
